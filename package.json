@@ -2,11 +2,12 @@
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --mode development --watch --open --hot",
     "test": "jest --no-color 2>output.txt",
-    "build": "webpack --mode production",
-    "start": "react-scripts start"
+    "build": "webpack --mode production"
+    
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,7 @@
     "jest-junit": "^11.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-scripts": "^5.0.1",
     "style-loader": "^1.2.1",
     "webpack-cli": "^3.3.12"
   },
