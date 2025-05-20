@@ -1,11 +1,18 @@
 
-import React from "react";
+import React,{useState} from "react";
 import './../styles/App.css';
 
 const App = () => {
+  const [isLoggedIn,setIsloggedin]=useState(false)
+
+  function changeLoginfo(){
+    setIsloggedin(true)
+  }
   return (
     <div>
-        {/* Do not remove the main div */}
+      <h1>Parent Component</h1>
+        <Form changeLoginfo={changeLoginfo} />
+
     </div>
   )
 }
