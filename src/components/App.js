@@ -1,6 +1,7 @@
 
 import React,{useState} from "react";
 import './../styles/App.css';
+import Form from "./Form";
 
 const App = () => {
   const [isLoggedIn,setIsloggedin]=useState(false)
@@ -11,7 +12,7 @@ const App = () => {
   return (
     <div>
       <h1>Parent Component</h1>
-        <Form changeLoginfo={changeLoginfo} />
+        <Form changeLoginfo={changeLoginfo} isLoggedIn={isLoggedIn} />
 
     </div>
   )
